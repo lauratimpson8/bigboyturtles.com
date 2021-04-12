@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <section>
+            <title>Page Title</title>
+            <link rel="stylesheet" href="/style.css"/>
+            <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.css" />
+        </section>
+    </head>
+    <body>
+        <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
+<div id="snipcart" data-config-modal-style="side" data-api-key="MzA3MjAwODItOWI2MC00MmY2LWEyYmYtZDBlNWJmZTZjZjA1NjM3NDgzOTY3MTgzNDU5MTgz" hidden></div>
+        <div class="product-details">
+            <section class="pictures">
+                <h1>
+                    Sparkle Turtle
+                </h1>
+                <div class="photo-gallery">
+                    <div class="primary-photo" style="background-image: url('/images/s4.png');">
+
+                    </div>
+                    <img src="images/s4.png">
+                    <img src="images/grayhoodie.png">
+                    <img src="images/s4-in.png">
+                    <img src="images/grayhoodie-in.png">
+                </div>
+            </section>
+            <section class="details">
+                <div class="more-specific-details">
+                <h2>
+                    $23.95
+                </h2>
+                <p>
+                    Unisex Lightweight Hoodie | District DT571 (Black/Gray) A hoodie with a colorful water color turtle on the front.
+                </p>
+                <form>
+                    <div class="product-sizes">
+                    <label>
+                    <input type="radio" name="size" value='Small'>
+                        Small
+                    </label>
+                     <label>
+                    <input type="radio" name="size" value='Medium'>
+                        Medium
+                    </label>
+                     <label>
+                    <input type="radio" name="size" value='Large'>
+                        Large
+                    </label>
+                    </div>
+                    <div class="product-color">
+                         <label>
+                    <input type="radio" name="color" value='Black'>
+                        Black
+                    </label>
+                         <label>
+                    <input type="radio" name="color" value='Gray'>
+                        Gray
+                    </label>
+                    </div>
+                    <a class="snipcart-add-item"
+  data-item-id="starry-night"
+  data-item-price="79.99"
+  data-item-url="/paintings/starry-night"
+  data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+  data-item-image="/assets/images/starry-night.jpg"
+  data-item-name="The Starry Night"
+data-item-custom1-name="Size"
+data-item-custom1-options="Small|Medium|Large">
+
+  Add to cart
+
+                    </a>
+                </form>
+                </div>
+            </section>
+        </div>
+        <script type="text/javascript">
+$( ".photo-gallery > img" ).click(function() {
+var imgSrc= $(this).attr("src");
+$('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
+});
+$( ".product-details form input" ).change(function() {
+var productSize= $(this).val();
+$('.snipcart-add-item').attr('data-item-custom1-value',productSize);
+});
+
+</script>
+
+    </body>
+</html>
